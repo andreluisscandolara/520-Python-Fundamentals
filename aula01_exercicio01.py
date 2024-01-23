@@ -12,12 +12,15 @@
 nome = input ("Entre com o nome: ")
 cpf = input ("Entre com o CPF: ")
 idade = input ("Entre com a idade: ")
-print("-----------------------------") 
-print("Confirmação de cadastro:")
-print(f"Nome: {nome}")
-print(f"CPF: {cpf}")
-print(f"Idade: {idade}")
-print("-----------------------------") 
+
+print(f"""
+-----------------------------
+Confirmação de cadastro:
+Nome: {nome}
+CPF: {cpf}
+Idade: {idade}
+-----------------------------
+""")
 
 # 2) Escreva um script em Python que receba dois números e que seja realizado as seguintes
 # operações:
@@ -30,13 +33,17 @@ print("-----------------------------")
 # Soma: 4 + 2 = 6
 # Diferença: 4 - 2 = 2
 
-primeiro_numero = input ("Entre com o 1 número: ")
-segundo_numero = input ("Entre com o 2 número: ")
-soma = (int(primeiro_numero) + int(segundo_numero))
-diferenca = (int(primeiro_numero) - int(segundo_numero))
-print("-----------------------------") 
-print(f"Soma: {soma}")
-print(f"Diferença: {diferenca}")
+primeiro_numero = int(input ("Entre com o 1 número: "))
+segundo_numero = int(input ("Entre com o 2 número: "))
+soma = primeiro_numero + segundo_numero
+diferenca = primeiro_numero - segundo_numero
+
+print(f"""
+-----------------------------
+Soma {primeiro_numero} + {segundo_numero} = {soma}
+Diferença {primeiro_numero} - {segundo_numero} = {diferenca}
+-----------------------------
+""")
 
 
 
