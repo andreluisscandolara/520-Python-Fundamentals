@@ -94,57 +94,68 @@
 # frase=frase.replace("c", "---")
 # print(frase)
 
-#DICIONARIO - Hash table
+# #DICIONARIO - Hash table
+# #chave -> valor
 
-dicionario = {}
-for x in dicionario():
-    print(x)
+# dicionario = {"Altura": 1.80}
 
-for x in dicionario.items():
-    print(x)
+# dicionario["Nome"] = "Tiago"
+# dicionario["Cor"] = "Verde"
 
-for x in dicionario.keys():
-    print(x)
+# #              |------ITEM----|  |----ITEM-----|
+# # DICIONARIO = {'Nome': 'Tiago', 'Cor': 'Verde'}
+# #               CHAVE  :  VALOR,  CHAVE: VALOR
 
-for x in dicionario.values():
-    print(x)
+# dicionario = {}
+# for x in dicionario():
+#     print(x)
 
-for x, y in dicionario.items():
-    print(f"Cahve: {x}, Valor: {y}")
+# for x in dicionario.items():
+#     print(x)
 
-#SETS
-variavel_sets = {}
-variavel_sets = {10, 15, 30, "teste", 15}
-variavel_sets = set(variavel_sets)
-variavel_sets.add(20)
+# for x in dicionario.keys():
+#     print(x)
 
-print (variavel_sets)
+# for x in dicionario.values():
+#     print(x)
 
+# for x, y in dicionario.items():
+#     print(f"Cahve: {x}, Valor: {y}")
 
+# #SETS
+# variavel_sets = {}
+# variavel_sets = {10, 15, 30, "teste", 15}
+# variavel_sets = set(variavel_sets)
+# variavel_sets.add(20)
 
+# print (variavel_sets)
 
+# #FUNÇÕES
+# def soma():
+#     print("Você está usando uma função")
 
+# soma()
 
+# def soma(x, y):
+#     resultado = x + y
+#     print(resultado)
 
+# soma(5, 8)
+# soma(4, 2)
+# soma(3, 3)
 
+# def soma(x, y):
+#     resultado = x + y
+#     return resultado
 
+# print(soma(5, 8))
+# print(soma(4, 2))
+# print(soma(3, 3))
 
+# #FUNÇÕES LAMBDA / FUNÇÕES ANÔNIMAS
+# diferenca = lambda x, y: x - y
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# print(diferenca(7, 5))
 
 
 
