@@ -6,12 +6,13 @@
 # chamada da função: saudacao('Lalo')
 # saída: 'Olá Lalo! Tudo bem com você?'
 
-# def saudacao(nome):
-#     print(f"Olá {nome}! Tudo bem com você?")
+#Exemplo 1
+def saudacao(nome):
+    print(f"Olá {nome}! Tudo bem com você?")
 
-# nome = input("Qualo seu nome?: ")
+nome = input("Qualo seu nome?: ")
 
-# saudacao(nome)
+saudacao(nome)
 
 
 # ====================================================
@@ -20,6 +21,7 @@
 # Ela pergunta dois numeros, e da as opções de calculo.
 # (soma, diferença, multiplicação, divisão)
 
+#Exemplo 2
 def calculadora(num1, num2, operacao):
     if operacao == 1:
         resultado = num1 + num2
