@@ -158,6 +158,38 @@
 # print(diferenca(7, 5))
 
 
+# # DUNDER __name__
+# def final():
+#     print("Finalizando o teste.")
+
+# def main():
+#     print("Inicializando o teste.")
+#     final()
+
+# if __name__ == '__main__':
+#     main()
+
+# #MÓDULOS
+# #MÓDULOS NATIVOS
+# import os
+# os.system()          
+
+# from os import system
+# system()
+
+# #MÓDULOS BAIXADOS COM PIP
+# pip3 install flask
+
+# #==================
+# #MÓDULO RANDOM
+# import random
+
+# random.choice()
+# random.random(1, 100)
+# random.randint(1, 100)
+
+
+
 
 
 
