@@ -188,15 +188,58 @@
 # random.random(1, 100)
 # random.randint(1, 100)
 
+# #break -> pára o loop completamente
+# #continue -> continua pula para o proximo lopp
+# #pass -> continua a execução do código
 
+# #HELP DE COMANDOS
+# help(open) #help comando open
 
+# #MANIPULAÇÃO DE ARQUIVOS
+# #r -> read
+# #w -> escrita (sobescreve)
+# #a -> append
+# #+ -> leitura e escrita
 
+# arquivo = open("texto.txt", "w")
+# conteudo = "Primeira linha do arquivo"
+# arquivo.write(conteudo)
+# arquivo.close()
 
+# arquivo = open("texto.txt", "a")
+# conteudo = "\nSegunda linha do arquivo"
+# arquivo.write(conteudo)
+# arquivo.close()
 
+# arquivo = open("texto.txt", "r")
+# conteudo = arquivo.readlines()
+# for linha in conteudo:
+#     print(linha, end="")
+# arquivo.close()
 
+# #ARQUIVOS .CSV
+# import csv
 
+# with open("registro.csv", "r") as arquivo:
+#     conteudo = csv.reader(arquivo, delimiter=";")
+#     # cabecalho = next(conteudo)
+#     # primeira_linha = next(conteudo)
+#     # segunda_linha = next(conteudo)
+#     # terceira_linha = next(conteudo)
 
+#     lista_conteudo = []
 
+#     for linha in conteudo:
+#         lista_conteudo.append(linha)
+
+#     for linha in lista_conteudo:
+#         print(linha)
+
+# #--------------------------------------------
+# with open("registro.csv", "a", newline="") as arquivo:
+#     escrita=csv.writer(arquivo, delimiter=";")
+
+#     escrita.writerow(["444444444", "André", "49", "M", "Brasileiro"])
 
 
 
