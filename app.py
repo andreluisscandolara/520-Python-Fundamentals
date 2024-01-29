@@ -166,7 +166,7 @@
 #     print("Inicializando o teste.")
 #     final()
 
-# if __name__ == '__main__':
+# if __name__ == "__main__":
 #     main()
 
 # #MÓDULOS
@@ -240,6 +240,116 @@
 #     escrita=csv.writer(arquivo, delimiter=";")
 
 #     escrita.writerow(["444444444", "André", "49", "M", "Brasileiro"])
+
+
+# #CASE / MATCH -> python 3.10 e superiores
+# def verificanome(nome):
+#     match nome:
+#         case "André":
+#             print("Nome bonito")
+#         case "Bob":
+#             print("O apelido é Bobito")
+#         case "MacGyver":
+#             print("O apelido é Bebezão")
+#         case _:
+#             print("Nomes inválidos")
+
+# nome = input("Qual o nome?: ")
+
+# verificanome(nome)
+
+# #ESCOPO / SCOPE
+# x = 300 #variável Global. Escopo Global
+
+# def funcao():
+#     #global x
+#     x =  250 #variável Local. Escopo Local
+ 
+# funcao()
+# print(x)
+
+# #CLASS / CLASSES
+# #Crie uma classe pra simular uma pilha, onde itens só podem ser removidos do topo.
+
+# class Pilha:
+
+#     def __init__(self):
+#         self.__pilha = []
+#         self.__topo = 0 #Ecapsulamento -> variáveis começando com __
+
+#     def empilhar(self, item):
+#         self.__pilha.append(item)
+#         self.__topo += 1
+
+#     def desempilhar(self):
+#         if self.__topo > 0:
+#             ultimo_item = self.__pilha[-1]
+#             self.__pilha.remove(ultimo_item)
+#             self.__topo -= 1
+#             return "Item removido"
+#         else:
+#             return "Nenhum item empilhado"
+        
+#     def checar(self):
+#         return self.__pilha
+        
+# balcao = Pilha()
+
+# balcao.empilhar("Prato de vidro verde")
+# balcao.empilhar("Prato de porcelana azul")
+# balcao.empilhar("Prato de metal")
+# balcao.empilhar("Prato de madeira")
+
+# print(balcao.checar())
+
+# balcao.desempilhar()
+# balcao.desempilhar()
+
+# #Encapsulamento
+# print(balcao.checar())
+
+# #Herança
+# class Funcionario:
+
+#     def __init__(self):
+#         self.__nome = ""
+#         self.__idade = 0
+#         self.__salario = 0
+
+
+# class Gerentes(Funcionario):
+
+#     def __init__(self):
+#         super().__init__()
+#         self.__bonus = "25%"
+
+
+# #Polimorfismo -> herda caracteristicas de outras classas e também as alteras
+# class Cliente:
+
+#     def __init__(self):
+#         self.carrinho = []
+#         self.cpf = ''
+#         self.total = 0
+
+#     def adicionar_item(self, item):
+#         self.carrinho.append(item)
+
+#     def caixa(self):
+#         for item in self.carrinho:
+#             self.total += 1.99
+#         return self.total
+    
+# class ClienteVIP(Cliente):
+
+#     def __init__(self):
+#         super().__init__()
+#         self.desconto = 0.95
+
+#     def caixa(self):
+#         for item in self.carrinho:
+#             self.total += 1.99
+#         return self.total * self.desconto
 
 
 
