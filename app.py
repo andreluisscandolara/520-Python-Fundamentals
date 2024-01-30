@@ -351,6 +351,92 @@
 #             self.total += 1.99
 #         return self.total * self.desconto
 
+# #TRATAMENTO DE EXCEPTIONS
+# # try:      Tenta executar um trecho de código.
+# # except:   Toma uma ação de acordo com a exceção criada no try.
+# # else:     Executa um código caso o try seja bem sucedido.
+# # finally:  Executa um código em todo caso.
+
+# try:
+#     teste = int("André")
+
+# except ValueError:
+#     print("Deu um erro do tipo ValueError, não dá pra converter str em int!")
+
+# except TypeError:
+#     pass
+
+# except ImportError:
+#     pass
+
+# else:
+#     print("O try foi bem sucedido")
+
+# finally:
+#     print("Esta mensagem sempre será executada!")
+
+# #BANCO DE DADOS RELACIONAIS
+# import sqlite3
+
+# #Estabelece uma conexão ou cria novo arquivo de banco de dados se ele não existir
+# conexao = sqlite3.connect("estoque.db") 
+# #Cria uma ferramenta paa editar o banco de dados
+# cursor = conexao.cursor()
+
+# #slqlite3 armazena as informações em tabelas
+
+# #Comando para criar uma tabela chamada "nomes"
+# comando_cria_tabela = """
+# CREATE TABLE nomes (
+# id integer primary key autoincrement,
+# nome text,
+# idade integer,
+# sexo)
+# """
+
+# try:
+#     #Executa o comando para criar a tabela
+#     cursor.execute(comando_cria_tabela)
+# except sqlite3.OperationalError:
+#     pass
+
+# #Adicionar registros na tabela
+# comando_adiciona_item = """
+# INSERT INTO nomes (nome, idade, sexo) 
+# values ("André", 49, "M")
+# """
+
+# cursor.execute(comando_adiciona_item)
+# conexao.commit()
+
+# #Como remover registro de tabela
+# comando_remove_item = """
+# DELETE FROM nomes WHERE id = 2
+# """
+
+# cursor.execute(comando_remove_item)
+# conexao.commit()
+
+# #Como fazer update em registro
+# comando_atualiza_valor = """
+# UPDATE nomes
+# SET nome = "Bob"
+# WHERE id = 4
+# """
+
+# cursor.execute(comando_atualiza_valor)
+# conexao.commit()
+
+# #Como verificar o conteúdo dentro da tabela
+# comando_checa_tabela = """
+# SELECT * FROM nomes
+# """
+
+# cursor.execute(comando_checa_tabela)
+# conteudo = cursor.fetchall()
+# print(conteudo)
+
+
 
 
 
