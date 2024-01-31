@@ -436,6 +436,194 @@
 # conteudo = cursor.fetchall()
 # print(conteudo)
 
+# #LIST COMPREHENSION
+# lista = []
+# for numero in range(5, 10):
+#     lista.append(numero * numero)
+# print(lista)
+
+# lista = [numero * numero for numero in range(5, 10)]
+# print(lista)
+
+# #DICT COMPREHENSION
+# dicionario = {}
+# for numero in range(4, 8):
+#     dicionario[numero] = numero * numero
+# print(dicionario)
+
+# dicionario = {chave: valor * valor for chave, valor in enumerate(range(4, 8))}
+# print(dicionario)
+
+# #===================================================
+# #MAP, REDUCE E FILTER
+# x = lambda n1: n1**2
+# y = lambda n1, n2: n1+n2
+# z = lambda n1: n1 > 30
+# lista = [2, 3, 4, 5, 6, 24, 52, 66, 161, 70, 11]
+
+# print(x(5))
+
+# #map -> aplica uma determinada função a um grupo de valores
+# print(list(map(x, lista)))
+
+# #reduce -> reduz o número de obejtos dentro de uma coleção
+# from functools import reduce
+
+# print(reduce(y, lista))
+
+# #filter -> filtra valores de uma lista com base na condição existente na função passada na chamada do filter
+# print(list(filter(z, lista)))
+
+# #===================================================
+# #GENERATORS -> servem para gerar dados, conteúdos
+# def sequencia(numero):
+#     lista = []
+#     for item in range(numero):
+#         lista.append(item)
+#     return(lista)
+
+# print(sequencia(20))
+
+# #criando a mesma função acima usando generator
+# def gen_sequencia(numero):
+#     for item in range(numero):
+#         yield item #yield caracteriza um generator
+
+# numero_generator = gen_sequencia(10)
+# print(next(numero_generator))
+
+# print("=" * 40)
+
+# #generator comprehension -> é criado com parentesis
+# gen_numeros = (item for item in range(10))
+
+# print(next(gen_numeros))
+
+# #===================================================
+# #EXCEPTIONS PERSONALIZADAS
+# class NaoEstaNaLista(Exception):
+    
+#     def __init__(self, nome):
+#         self.message = nome 
+#         #self.mensagem = None #None é nulo, sem valor nenhum
+    
+#     def __str__(self):
+#         print(f"NaoEstaNaLista: nome recebido foi {self.message}")
+
+# lista = ["Bob", "MacGyver", "André"]
+
+# pessoa = input("Qual o seu nome?: ")
+
+# try:
+#     if pessoa not in lista:
+#         raise NaoEstaNaLista(pessoa) #raise chama uma exceção
+
+# except NaoEstaNaLista as erro:
+#     print(erro)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
