@@ -521,6 +521,62 @@
 # except NaoEstaNaLista as erro:
 #     print(erro)
 
+#===================================================
+#UNITTEST -> testa o código
+import unittest
+
+class TestandoStrings(unittest.TestCase):
+    def teste_igual(self):
+        self.assertEqual("teste".upper(), "TESTE")
+
+    def teste_maiusculo(self):
+        self.assertTrue("BOB".isupper())
+        self.assertFalse("Bob".isupper())
+
+    def teste_repetido(self):
+        string = "Testando string"
+        self.assertEqual(string.split(), ["Testando", "string"])
+
+if __name__ == "__main__":
+    unittest.main()
+
+#===================================================
+#VENV -> cria um ambiente virtual
+# python -m venv ./nova-pasta -> cria a pasta do ambiente virtual
+# pip install flask -> instala o flask no novo ambiente virtual
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
